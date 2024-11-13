@@ -8,11 +8,10 @@ import com.hazelcast.map.IMap;
 
 public class HazelMap {
     public static void main(String[] args) {
-    	//
+    	// client config for existing hazelcast instance (should be run externally)
         ClientConfig clientConfig = new ClientConfig();
         clientConfig.getNetworkConfig().addAddress("127.0.0.1:5701"); // localhost for testing
 
-    	
     	// initializing Hazelcast instance
         HazelcastInstance hz = HazelcastClient.newHazelcastClient(clientConfig);
         
