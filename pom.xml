@@ -9,5 +9,10 @@
         <artifactId>hazelcast</artifactId>
         <version>5.3.0</version> <!-- Replace with the latest version -->
     </dependency>
+    <dependency>
+        <groupId>com.esotericsoftware.kryo</groupId>
+        <artifactId>kryo</artifactId>
+        <version>2.22</version>
+     </dependency>
 </dependencies>
 </project>
