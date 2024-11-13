@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xmlns="http://www.hazelcast.com/schema/config"
+           xsi:schemaLocation="http://www.hazelcast.com/schema/config http://www.hazelcast.com/schema/config/hazelcast-config-5.3.xsd"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Network Configuration -->
+    <network>
+        <join>
+            <multicast enabled="false"/>
+            <!-- Other join methods like TCP can be added here if needed -->
+            <tcp-ip enabled="true">
+            </tcp-ip>
+        </join>
+    </network>
+
+    <!-- CP Subsystem (Optional) -->
+    <!-- cp-subsystem enabled="true"/ -->
+
+    <!-- Jet Engine (Optional) -->
+    <jet enabled="true"/>
+
+    <!-- Other Hazelcast configurations -->
+    
+</hazelcast>
