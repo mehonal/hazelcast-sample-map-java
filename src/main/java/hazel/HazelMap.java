@@ -1,13 +1,20 @@
 package hazel;
 
+import com.hazelcast.client.HazelcastClient;
+import com.hazelcast.client.config.ClientConfig;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
 
 public class HazelMap {
     public static void main(String[] args) {
+    	//
+        ClientConfig clientConfig = new ClientConfig();
+        clientConfig.getNetworkConfig().addAddress("127.0.0.1:5701"); // localhost for testing
+
+    	
     	// initializing Hazelcast instance
-        HazelcastInstance hz = Hazelcast.newHazelcastInstance();
+        HazelcastInstance hz = HazelcastClient.newHazelcastClient(clientConfig);
         
         // getting (or making) the map
         IMap<String, Person> map = hz.getMap("my-distributed-map");
