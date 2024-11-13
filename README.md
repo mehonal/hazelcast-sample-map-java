@@ -24,7 +24,7 @@ $ docker run  -d --name hazelcast -p 5701:5701 hazelcast/hazelcast:latest
 
 Optionally, you may also run the Hazelcast Management Center to see the impact of your actions through a neat dashboard. Here is an example:
 
-![Hazelcast Management Center](https://github.com/mehonal/hazelcast-sample-map-java/tree/master/src/main/resources/screenshots/hazelcast-management-center-map.png)
+![Hazelcast Management Center](https://raw.githubusercontent.com/mehonal/hazelcast-sample-map-java/refs/heads/master/src/main/resources/screenshots/hazelcast-management-center-map.png)
 
 You may easily run the Hazelcast Management Center using:
 
